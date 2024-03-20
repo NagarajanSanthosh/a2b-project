@@ -1,21 +1,32 @@
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
 .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure the navbar stretches across the width */
+    width: 100%;
 }
 
 .left-items {
     margin-right: auto;
-    margin-left: 5rem;
+    margin-left: 2.5rem;
+}
+
+.center-items {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .right-items {
     display: flex;
     align-items: center;
-    margin-right: 2rem;
+}
+
+.right-items>div {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }

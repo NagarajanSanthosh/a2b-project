@@ -1,0 +1,17 @@
+.input-wrapper {
+    position:relative;
+    display: inline-block;
+}
+
+input.rounded {
+    padding-left: 25px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 5px; /* Adjust as needed */
+    transform: translateY(-50%);
+}

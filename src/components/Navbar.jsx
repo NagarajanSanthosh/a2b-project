@@ -5,6 +5,7 @@ import Cart from './Cart';
 import Carousel from './Carousel';
 import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 const Navbar = () => {
     return (
         <div>
@@ -13,11 +14,12 @@ const Navbar = () => {
                     <div className='left-items'>
                         <Search />
                     </div>
+                    <div className='center-items'>
+                        <h2><strong>M E N U</strong></h2>
+                    </div>
                     <div className='right-items'>
                         <div className='ms-4'><Order /></div>
                         <div className='ms-4'><Cart /></div>
-
-
                     </div>
                 </nav>
             </header>

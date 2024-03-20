@@ -1,14 +1,18 @@
-import React from 'react'
-import {FaSearch} from 'react-icons/fa'
+import React from 'react';
+import { FaSearch } from 'react-icons/fa';
+import './Search.css'; // Import CSS file for styling
+
 const Search = () => {
     return (
-        <div>
-            <div className='react-icon'>
-            
-            <FaSearch />
-            </div>
+        <div className='input-wrapper'>
+            <input
+                className='rounded'
+                type='text'
+                placeholder='Search'
+            />
+            <FaSearch className='search-icon' />
         </div>
-    )
-}
+    );
+};
 
-export default Search
+export default Search;
