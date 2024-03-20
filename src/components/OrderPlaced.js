@@ -12,7 +12,7 @@ const OrderPlaced = () => {
       </div>
       <div className="verificationpage">
 
-      <img src={exampleImage} alt="" />
+ 
       <p className="verificationbox"></p>
       
        </div>

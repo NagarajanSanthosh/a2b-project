@@ -43,6 +43,8 @@
     margin-top: 10%;
     background-color: green;
     border: none;
+    z-index: 0;
+
     
 }
 .verificationpage img{
@@ -50,6 +52,7 @@
     width: 350px;
     z-index: -1;
     height: 200px;
-   position: absolute;
+    border-radius: 60%;
+    position: absolute;
    
 }
