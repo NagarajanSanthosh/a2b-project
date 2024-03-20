@@ -1,14 +1,22 @@
 import React from 'react'
 import exampleImage from '../assets/a2blogo.jpg';
 import '../styles/Addtocart.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const Addtocart = () => {
-
+  const navigate = useNavigate();
+const handleAddmore = (e) => {
+  e.preventDefault();
+  navigate('/')
+}
+const handleOrder = (e) => {
+  e.preventDefault();
+  navigate('/tablebill')
+}
   const itemsarray = [
     {
       item: "dosa",
-      quantity:4,
+      quantity: 4,
       Rate: 50,
       Total: 200
     },
@@ -61,8 +69,8 @@ const Addtocart = () => {
         </table>
       </div>
 
-      <button className='addmorebutton'>Addmore</button>
-      <button className='orderbtn'>order</button>
+      <button className='addmorebutton' onClick={handleAddmore}>Addmore</button>
+      <button className='orderbtn' onClick={handleOrder}>order</button>
       <br />
       <br />
 

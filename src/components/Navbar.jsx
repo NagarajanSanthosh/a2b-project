@@ -20,6 +20,8 @@ const Navbar = () => {
                     <div className='right-items'>
                         <div className='ms-4'><Order /></div>
                         <div className='ms-4'><Cart /></div>
+                        
+
                     </div>
                 </nav>
             </header>
