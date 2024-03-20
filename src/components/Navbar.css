@@ -1,0 +1,21 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Ensure the navbar stretches across the width */
+}
+
+.left-items {
+    margin-right: auto;
+    margin-left: 5rem;
+}
+
+.right-items {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
