@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Search from './Search';
-import Order from './Order';
+import Offer from './Offer';
 import Cart from './Cart';
 import Carousel from './Carousel';
-import './Navbar.css';
+import '../styles/Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ImageSlider from './ImageSlider';
 
 const Navbar = () => {
+    const [boolClick, setboolClick] = useState(false);
+
     return (
         <div>
             <header className='navbar-container'>
@@ -18,7 +21,7 @@ const Navbar = () => {
                         <h2><strong>M E N U</strong></h2>
                     </div>
                     <div className='right-items'>
-                        <div className='ms-4'><Order /></div>
+                        <div className='ms-4'><Offer setboolClick={setboolClick}/></div>
                         <div className='ms-4'><Cart /></div>
                         
 
@@ -26,6 +29,7 @@ const Navbar = () => {
                 </nav>
             </header>
             <Carousel />
+            {boolClick && <ImageSlider />}
         </div>
     );
 }
