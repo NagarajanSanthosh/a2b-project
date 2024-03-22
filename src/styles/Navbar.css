@@ -19,9 +19,7 @@
 .center-items {
     flex-grow: 1;
     text-align: center;
-    h2{
-        color: blue;
-    }
+
 }
 
 .right-items {

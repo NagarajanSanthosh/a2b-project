@@ -5,14 +5,14 @@ import { useNavigate } from 'react-router-dom';
 
 const Addtocart = () => {
   const navigate = useNavigate();
-const handleAddmore = (e) => {
-  e.preventDefault();
-  navigate('/')
-}
-const handleOrder = (e) => {
-  e.preventDefault();
-  navigate('/tablebill')
-}
+  const handleAddmore = (e) => {
+    e.preventDefault();
+    navigate('/menu')
+  }
+  const handleOrder = (e) => {
+    e.preventDefault();
+    navigate('/tablebill')
+  }
   const itemsarray = [
     {
       item: "dosa",

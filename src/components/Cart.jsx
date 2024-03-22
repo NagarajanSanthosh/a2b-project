@@ -7,7 +7,7 @@ const Cart = () => {
         e.preventDefault();
         navigate('/addtocart')
     }
-    
+
     return (
         <div onClick={handleCartClick}>
             Cart
