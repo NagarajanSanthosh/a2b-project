@@ -1,19 +1,13 @@
-<<<<<<< HEAD
 import Addtocart from  './components/Addtocart';
 import OrderPlaced from  './components/OrderPlaced';
-function App() {
-  return (
-    <div className="App">
-     <Addtocart/>
-     <OrderPlaced/>
-=======
-import Menu from "./components/Menu";
+import Navbar from './components/Navbar';
+import Tabletime from './components/TableTime';
+import Homepage from './components/Homepage';
 
 function App() {
   return (
     <div className="App">
-      <Menu />
->>>>>>> deefbee0c3234795736473be8e002662cd11fa12
+      <Homepage/>
     </div>
   );
 }

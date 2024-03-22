@@ -1,6 +1,7 @@
 import React from 'react'
 import exampleImage from '../assets/a2blogo.jpg';
 import '../styles/Addtocart.css';
+import Titlepage from './Titlepage';
 
 
 const Addtocart = () => {
@@ -26,13 +27,12 @@ const Addtocart = () => {
     },
 
   ]
+ 
 
   return (
+    <div> <Titlepage/>
     <div className="main">
-      <div className="pdhead">
-        <img src={exampleImage} alt="" />
-        <h1>ADYAR ANANDA BHAVAN</h1>
-      </div>
+     
       <br />
       <h2>Cart</h2>
       <div className="items_table">
@@ -67,7 +67,7 @@ const Addtocart = () => {
       <br />
 
 
-
+      </div>
     </div>
   )
 }
